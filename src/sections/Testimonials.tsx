@@ -136,7 +136,7 @@ export const Testimonials = () => {
             essential tool for users around the world.
           </p>
         </div>
-        <div className='flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black,black,transparent)] max-h-[738px] overflow-hidden'>
+        <div className='flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,[#ff3131],[#ff3131],transparent)] max-h-[738px] overflow-hidden'>
           <TestimonialsColumn testimonials={firstColumn} duration={15} />
           <TestimonialsColumn
             testimonials={secondColumn}

@@ -1,8 +1,7 @@
 'use client'
 import ArrowRight from '@/assets/arrow-right.svg';
-import starImage from '@/assets/star.png';
-import springImage from '@/assets/spring.png';
-import Image from 'next/image';
+import popcornImage from '@/assets/popcorn.png';
+import bottleImage from '@/assets/bottle.png';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -23,8 +22,8 @@ export const CallToAction = () => {
             your progress and motivate your efforts
           </p>
           <motion.img
-            src={starImage.src}
-            alt='Star image'
+            src={popcornImage.src}
+            alt='Popcorn image'
             width={360}
             className='absolute -left-[350px] -top-[137px]'
             style={{
@@ -32,8 +31,8 @@ export const CallToAction = () => {
             }}
           />
           <motion.img
-            src={springImage.src}
-            alt='Spring Image'
+            src={bottleImage.src}
+            alt='bottle Image'
             width={360}
             className='absolute -right-[331px] -top-[19px]'
             style={{

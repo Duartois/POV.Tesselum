@@ -76,21 +76,21 @@ export const Pricing = () => {
                 key={title || index} // Usa o título como chave ou o índice como fallback
                 className={twMerge(
                   'card',
-                  inverse === true && 'border-black bg-black text-white'
+                  inverse === true && 'border-[#ff3131] bg-[#ff3131] text-white'
                 )}
               >
                 <div className='flex justify-between'>
                   <h3
                     className={twMerge(
-                      'text-lg font-bold text-black/50',
-                      inverse === true && 'text-white/60'
+                      'text-lg font-bold text-[#ff3131]',
+                      inverse === true && 'text-white'
                     )}
                   >
                     {' '}
                     {title}
                   </h3>
                   {popular === true && (
-                    <div className='inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20'>
+                    <div className='inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20 bg-white'>
                       <motion.span
                         animate={{
                           backgroundPositionX: '100%',
@@ -101,7 +101,7 @@ export const Pricing = () => {
                           ease: 'linear',
                           repeatType: 'loop',
                         }}
-                        className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%] text-transparent bg-clip-text font-medium'
+                        className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%] text-transparent bg-clip-text font-medium bg-white'
                       >
                         Popular
                       </motion.span>
@@ -109,17 +109,23 @@ export const Pricing = () => {
                   )}
                 </div>
                 <div className='flex item-baseline gap-1 mt-[30px]'>
-                  <span className='text-4xl font-bold tracking-tighter leading-none'>
+                  <span className={twMerge(
+                    'text-4xl font-bold tracking-tighter leading-none text-[#ff3131]',
+                    inverse === true && 'text-white'
+                  )}>
                     ${monthlyPrice}
                   </span>
-                  <span className='tracking-tight font-bold text-black/50'>
+                  <span className={twMerge(
+                    'tracking-tight font-bold text-[#ff3131]',
+                    inverse === true && 'text-white'
+                  )}>
                     /month
                   </span>
                 </div>
                 <button
                   className={twMerge(
                     'btn btn-primary w-full mt-[30px]',
-                    inverse === true && 'bg-white text-black'
+                    inverse === true && 'bg-white text-[#ff3131]'
                   )}
                 >
                   {buttonText}

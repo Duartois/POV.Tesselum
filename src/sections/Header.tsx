@@ -6,8 +6,8 @@ import MenuIcon from '@/assets/menu.svg';
 export const Header = () => {
   return (
     <header className='sticky top-0 backdrop-blur-sm z-20'>
-      <div className='flex justify-center items-center py-3 bg-black text-white text-sm gap-3'>
-        <p className='text-white/60 hidden md:block'>
+      <div className='flex justify-center items-center py-3 bg-[#ff3131] text-white text-sm gap-3'>
+        <p className='text-white font-bold hidden md:block'>
           Streamline your workflow and boost your productivity
         </p>
         <div className='inline-flex gap-1 items-center'>
@@ -22,14 +22,14 @@ export const Header = () => {
             <Image src={Logo} alt='Saas Logo' height={40} width={40} className='z-20'/>
             </div>
             <MenuIcon className='h-5 w-5 md:hidden' />
-            <nav className='hidden md:flex gap-6 text-black/60 items-center'>
+            <nav className='hidden md:flex gap-6 text-[#ff3131] items-center'>
               <a href='#'>About</a>
               <a href='#'>Features</a>
               <a href='#'>Customer</a>
               <a href='#'>Updates</a>
               <a href='#'>help</a>
               <a href='#'></a>
-              <button className='bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>
+              <button className='bg-[#ff3131] text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>
                 Get for free
               </button>
             </nav>

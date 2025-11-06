@@ -1,4 +1,4 @@
-// File: /Users/matheusduarte/Desktop/CASE 52ABX-32QJ/Projects/Modelo Landing Page Parallax/src/app/page.tsx
+// File: C:\Users\win\OneDrive\Desktop\Pasta MatD\Projetos Web\POV.Tesselum\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,7 +1,7 @@
 'use client';
 import productImage from '@/assets/product-image.png';
-import pyramidImage from '@/assets/pyramid.png';
-import tubeImage from '@/assets/tube.png';
+import clipboardImage from '@/assets/clipboard.png';
+import filmrollImage from '@/assets/filmroll.png';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
@@ -34,18 +34,19 @@ export const ProductShowcase = () => {
         <div className='relative'>
           <Image src={productImage} alt='Product Image' className='mt-10' />
           <motion.img
-            src={pyramidImage.src}
-            alt='Pyramid Image'
+            src={clipboardImage.src}
+            alt='clipboard Image'
             height={262}
             width={262}
             className='hidden md:block absolute -right-36 -top-32'
             style={{
               translateY,
+              rotate: '-10deg',
             }}
           />
           <motion.img
-            src={tubeImage.src}
-            alt='Tube Image'
+            src={filmrollImage.src}
+            alt='filmroll Image'
             height={248}
             width={248}
             className='hidden md:block absolute bottom-24 -left-36'
