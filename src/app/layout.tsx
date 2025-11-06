@@ -9,6 +9,9 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "POV.Tessellum",
   description: "Saas Landing page built with Next.js and Tailwind CSS",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
