@@ -1,3 +1,7 @@
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack(config) {
@@ -24,6 +28,12 @@ const nextConfig = {
 
     // Modify the file loader rule to ignore *.svg, since we have it handled now.
     fileLoaderRule.exclude = /\.svg$/i;
+
+    // Use the userland "punycode" implementation instead of the deprecated Node.js builtin.
+    config.resolve.alias = {
+      ...(config.resolve.alias ?? {}),
+      punycode: require.resolve("punycode/"),
+    };
 
     return config;
   },
